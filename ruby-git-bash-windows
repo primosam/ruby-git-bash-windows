@@ -1,0 +1,28 @@
+1 - Inicialmente é preciso criar ás variaveis de ambiente:
+
+ (clique com o botão direito)Meu Computador > Propriedades > Configurações avançadas do sistema > Variaveis de ambiente
+
+ 2 - Aparecerá dois blocos destintos na tela o primeiro('variaveis de usúario +nomedocomputador') e o segundo ('váriaveis do sistema').
+
+ * Em variavel do sistema clique sobre o botão 'novo' para adicionar uma nova variável e em seguida coloque os seguintes valores:
+
+ 	nome da variável: RUBY_BIN
+ 	valor da variavel: aqui irá o caminho da pasta bin do ruby!
+ 	ex: C:\Ruby21\bin
+ 	(obs.localize a pasta no seu computador, o endereço pode variar)
+*ok
+
+3- crie mais uma váriavel com os seguintes valores:
+
+	nome da variável: MSYSGIT_BIN
+ 	valor da variavel: aqui irá o caminho da pasta bin do git!
+ 	ex: C:\Program Files (x86)\Git\bin 
+ 	(obs.localize a pasta no seu computador, o endereço pode variar)
+*ok
+
+4- No bloco acima (variáveis de usúario para +nomedocomputador), selecione a váriavel
+PATH > Editar > e no conteúdo final do campo adicione ;%RUBY_BIN%;%MSYSGIT_BIN%
+*ok
+
+5 - Abra o git bash e teste algum comando do ruby
+ex: ruby --v
